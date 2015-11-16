@@ -23,3 +23,4 @@ accounts-base
 accounts-password
 aldeed:collection2
 aldeed:autoform
+kadira:flow-router
