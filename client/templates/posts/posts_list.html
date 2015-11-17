@@ -1,0 +1,18 @@
+<template name="postsList">
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h2>List of posts</h2>
+    </div>
+
+    {{#if isSubReady}}
+      {{#each post}}
+        <h2>{{title}}</h2>
+        <p>{{content}}</p>
+        <a href="{{pathFor 'post' postId=_id}}" class="btn btn-success">Read</a>
+      {{/each}}
+    {{else}}
+      {{> spinner}}
+    {{/if}}
+
+  </div>
+</template>

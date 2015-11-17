@@ -1,0 +1,12 @@
+<template name="postPage">
+  <div class="container">
+    {{#if isSubReady 'post'}}
+      {{#with getPost}}
+        <h2>{{title}}</h2>
+        <p>{{content}}</p>
+      {{/with}}  
+    {{else}}
+      {{> spinner}}
+    {{/if}}
+  </div>
+</template>
